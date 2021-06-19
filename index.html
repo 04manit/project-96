@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body style="background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);">
+        <center>
+            <h1 style="font-family: 'Yeon Sung'; color: white; margin-top: 80px;">
+                Let's Chat Web App
+                <sup>
+                    <img style="width: 100px;" src="m2.png">
+                </sup>
+            </h1>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4" style="border-radius: 20px; padding-top: 20px; padding-bottom: 20px; background-color: #D1E6F3;">
+                <img style="border-radius: 50%; width: 80px;" src="logo.png">
+
+                <h3>See what is happening in the world right now</h3>
+
+                <p style="font-size: 16px;">Join Kwitter Now</p>
+
+                <label>Username :</label>
+
+                <input class="form-control" id="user_name" placeholder="Username" type="text" style="padding-top: 5px; padding-bottom: 5px; border-radius: 3px; border: 1px solid lightgray; width: 100%;"><br><br>
+            
+                <button id="login_button" class="btn btn-primary" onclick="addUser()" style="width: 90%; border-radius: 30px;">Log in</button>
+            </div>
+
+        </center>
+
+        <script src="kwitter.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Kwitter Room</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+
+    <body onload="update()" style="background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);">
+
+        <button onclick="logout()" id="btn_logout" style="float: right; font-size: 20px;" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+
+        <center>
+            <h1 style="padding-top: 50px; font-family: 'Yeon Sung'; color: white;">
+                Let's Chat Web App
+                <sup>
+                    <img style="width: 100px;" src="m2.png">
+                </sup>
+            </h1>
+
+            <h3 style="color: white;" id="user_name"></h3>
+
+            <label>#Add Room</label><br>
+
+            <input id="room_name" class="form-control" style="width: 80%;" placeholder="Room Name"><br>
+
+            <button onclick="addRoom()" class="btn btn-success">#Add Room</button>
+
+            <h3 style="color: white;">#TRENDINGROOMS</h3>
+            
+            <div id="output" style="padding: 10px; width:80%; background: rgba(255,255,255,0.8); border-radius: 15px;"></div>
+
+        </center>
+
+        <script src="kwitter_room.js"></script>
+    </body>
+</html>

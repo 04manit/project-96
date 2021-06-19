@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Kwitter Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+
+    <body style="background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);">
+        <button onclick="logout()" id="btn_logout" style="float: right; font-size: 20px;" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+
+        <center>
+            <h1 style="padding-top: 50px; font-family: 'Yeon Sung'; color: white;">
+                Let's Chat Web App
+                <sup>
+                    <img style="width: 100px;" src="m2.png">
+                </sup>
+            </h1>
+
+            <div id="output" style="text-align: left; padding: 10px; width:80%; background: rgba(255,255,255,0.8); border-radius: 15px;"></div>
+        </center>
+        <center>
+            <div style="position: fixed; bottom: 0px ;width: 100%; background: rgba(255,255,255,0.8);" class="input_div_msg_page">
+                <label style="color: black;">Send:</label>
+                <input style="width: 80%;" type="text" id="msg" class="form-control" placeholder="Message">
+                <button onclick="send()" style="margin-top: 15px; width: 50%;" class="btn btn-success">Send</button>
+            </div>
+        </center>
+
+        <script src="kwitter_page.js"></script>
+    </body>
+</html>
